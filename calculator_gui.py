@@ -27,3 +27,17 @@ class CalculatorGUI:
             if col_val >3:
                 col_val = 0
                 row_val +=1
+    
+    def button_click(self, button):
+        current_text = self.result_var.get()
+        
+        if button == 'C':
+            self.result_var.set('')
+        elif button == '=':
+            try:
+                result = eval(current_text)
+                self.result_var.set(result)
+            except Exception as e:
+                self.result_var.set('error')
+            else:
+                self.result_var.set(current_text + button)
