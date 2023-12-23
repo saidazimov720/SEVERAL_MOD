@@ -9,8 +9,8 @@ class CalculatorGUI:
         self.create_widgets()
     
     def create_widgets(self):
-        entry = tk.Entry(self.master, textvariable=self.result_var, justify="right", from=('arial', 14))
-        entry = grid(row=0, column=0, columspan=4, sticky="nsew")
+        entry = tk.Entry(self.master, textvariable=self.result_var, justify="right", font=('arial', 14))
+        entry.grid(row=0, column=0, columspan=4, sticky="nsew")
         
         buttons = [
             '7', '8', '9', '/',
