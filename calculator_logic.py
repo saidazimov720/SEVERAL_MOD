@@ -1,3 +1,4 @@
+import math
 def add(a,b):
     return a+b
 def sub(a,b):
@@ -9,3 +10,7 @@ def div(a,b):
         return a/b
     else:
         return "cannot divide to the zero"
+    
+def pow(a,b):
+    return a ** b
+
