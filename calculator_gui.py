@@ -22,7 +22,7 @@ class CalculatorGUI:
 
         row_val, col_val = 1, 0
         for button in buttons:
-            tk.Button(self.master, text=button, padx=40, pady=40, font=('Arial', 12),
+            tk.Button(self.master, text=button, padx=30, pady=30, font=('Arial', 12),
                       command=lambda btn=button: self.button_click(btn)).grid(row=row_val, column=col_val)
             col_val += 1
             if col_val > 3:
