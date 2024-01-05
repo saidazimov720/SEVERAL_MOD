@@ -14,3 +14,9 @@ def div(a,b):
 def pow(a,b):
     return a ** b
 
+def square(a):
+    try:
+        result = math.sqrt(a)
+        return result
+    except ValueError as e:
+        return f"error:{e}"
