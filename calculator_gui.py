@@ -1,5 +1,5 @@
 import tkinter as tk
-from calculator_logic import add, sub, mul, div
+from calculator_logic import add, sub, mul, div, pow, square
 
 class CalculatorGUI:
     def __init__(self, master):
